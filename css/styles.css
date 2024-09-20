@@ -1,0 +1,112 @@
+* p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+nav a:active {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+main {
+  margin-left: 10px;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+h4 {
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+  font-size: 17px;
+}
+
+.img-htmlcss {
+  width: 50%;
+  margin-left: 460px;
+}
+
+.estudiante {
+  height: 800px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  margin-left: 625px;
+}
+
+.importante {
+  font-weight: bold;
+}
+
+.caja-info {
+  border: 2px solid black; /* Aplica un borde */
+  padding: 20px; /* Espaciado interno */
+  font-size: 1vw; /* Tamaño de texto basado en el ancho de la ventana */
+  width: 80%; /* Ajusta el ancho del párrafo */
+  margin: auto; /* Centra el párrafo horizontalmente */
+  box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  color: gray;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
