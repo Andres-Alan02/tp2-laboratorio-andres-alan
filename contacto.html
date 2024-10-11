@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="./index.html" class="logo">Andres Alan</a></h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./acerca.html">Acerca de</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Contacto</h2>
+      <p class="contacto">
+        Bienvenidos al formulario de contacto. Por favor, te pido que completes
+        los campos.
+      </p>
+      <div class="contenedor-flex">
+        <form id="contactoForm">
+          <h3>Formulario de Contacto</h3>
+          <label for="nombre">Nombre (requerido):</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            maxlength="20"
+            required
+          /><br />
+
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            maxlength="20"
+          /><br />
+
+          <label for="email">Email (requerido):</label>
+          <input type="email" id="email" name="email" required /><br />
+
+          <label for="telefono">Telefono:</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="Ingrese su telefono"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='Ingrese su telefono'"
+          /><br />
+
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" name="edad" min="16" max="120" /><br />
+
+          <label for="direccion">Direccion:</label>
+          <textarea name="direccion" id="direccion"></textarea><br />
+
+          <label for="provincia">Provincia:</label>
+          <input list="provincias" id="provincia" name="provincia" />
+          <datalist id="provincias">
+            <option value="Chubut"></option>
+            <option value="Rio Negro"></option>
+            <option value="Neuquen"></option>
+            <option value="Santa Cruz"></option>
+            <option value="Tierra del Fuego"></option></datalist
+          ><br />
+
+          <label for="codigo_postal">Codigo Postal:</label><br />
+          <input
+            type="text"
+            id="codigo_postal"
+            name="codigo_postal"
+            pattern="[A-Z]\d{4}[A-Z]{3}"
+          />
+
+          <fieldset>
+            <legend>Método preferido de contacto:</legend>
+            <input
+              type="radio"
+              id="contact_email"
+              name="metodo_contacto"
+              value="email"
+              checked
+            />
+            <label for="contact_email">Correo electrónico</label>
+
+            <input
+              type="radio"
+              id="contact_postal"
+              name="metodo_contacto"
+              value="correo_postal"
+            />
+            <label for="contact_postal">Correo postal</label>
+
+            <input
+              type="radio"
+              id="contact_telefono"
+              name="metodo_contacto"
+              value="telefono"
+            />
+            <label for="contact_telefono">Teléfono</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Tipo de suscripción:</legend>
+            <input
+              type="checkbox"
+              id="noticias"
+              name="tipo_suscripcion"
+              value="noticias"
+            />
+            <label for="noticias">Noticias</label>
+
+            <input
+              type="checkbox"
+              id="promociones"
+              name="tipo_suscripcion"
+              value="promociones"
+            />
+            <label for="promociones">Promociones</label>
+
+            <input
+              type="checkbox"
+              id="alertas"
+              name="tipo_suscripcion"
+              value="alertas"
+              checked
+            />
+            <label for="alertas">Alertas</label>
+
+            <input
+              type="checkbox"
+              id="eventos"
+              name="tipo_suscripcion"
+              value="eventos"
+            />
+            <label for="eventos">Eventos</label>
+          </fieldset>
+
+          <button type="submit">Cargar</button>
+        </form>
+
+        <div class="tabla">
+          <h3>Tabla cargada con datos:</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Campo</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nombre</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Apellido</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Telefono</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Edad</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Direccion</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Provincia</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Metodo de contacto</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Tipo de suscripcion</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <span
+          >&copy;Todos los derechos reservados a la Universidad Nacional
+          Comahue</span
+        >
+      </p>
+    </footer>
+  </body>
+</html>

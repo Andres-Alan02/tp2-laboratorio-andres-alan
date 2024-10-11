@@ -3,49 +3,36 @@
 }
 
 .logo {
-  text-decoration: none;
   color: white;
 }
 
-header {
-  width: 100vw;
-  height: 10vh;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-nav {
-  display: flex;
-  gap: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5vw;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
+body {
   margin: 0;
 }
 
-nav ul li {
-  display: inline;
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 10px;
 }
 
-nav ul li a {
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+nav a {
+  padding: 15px;
+  margin: 10px;
+  border: 2px solid black;
   text-decoration: none;
   color: white;
-  padding: 10px;
+  font-size: 25px;
 }
 
 nav a:hover {
@@ -55,8 +42,8 @@ nav a:hover {
 
 nav a:active {
   background-color: black;
-  color: white;
   border: 2px solid white;
+  color: white;
 }
 
 main {
@@ -93,12 +80,117 @@ h4 {
 }
 
 .caja-info {
-  border: 2px solid black; /* Aplica un borde */
-  padding: 20px; /* Espaciado interno */
-  font-size: 1vw; /* Tamaño de texto basado en el ancho de la ventana */
-  width: 80%; /* Ajusta el ancho del párrafo */
-  margin: auto; /* Centra el párrafo horizontalmente */
+  border: 2px solid black;
+  padding: 20px;
+  font-size: 20px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 44px;
+  margin-top: 44px;
   box-sizing: border-box;
+  text-align: center;
+}
+
+.contacto {
+  text-align: center;
+}
+
+form {
+  padding: 20px;
+  margin: 50px auto;
+  width: 60%;
+  max-width: 600px;
+  border: 2px solid black;
+}
+
+form h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contenedor-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[list="provincias"],
+textarea {
+  width: 98%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+fieldset label {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  margin-right: 45px;
+}
+
+fieldset {
+  margin-bottom: 15px;
+}
+
+fieldset legend {
+  color: rgb(131, 131, 131);
+  font-size: 20px;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.tabla {
+  width: 35%;
+  margin: 10% 8% 20px 10px;
+}
+
+.tabla h3 {
+  text-align: center;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 85%;
+  background-color: rgb(74, 74, 74);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(21, 21, 75);
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid rgb(205, 205, 205);
+}
+
+th {
+  background-color: rgb(0, 0, 0);
 }
 
 footer {
