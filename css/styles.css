@@ -1,9 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Jersey+25+Charted&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
 * p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.titulo-logo {
+  color: white;
+  text-decoration: none;
 }
 
 .logo {
-  color: white;
+  display: flex;
+}
+
+.logo img {
+  height: 75px;
+  margin-left: 10px;
+}
+
+.logo-img {
+  animation: rotacion 2s ease-in-out forwards;
+}
+
+@keyframes rotacion {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 body {
@@ -17,6 +42,10 @@ header {
   height: 70px;
   align-items: center;
   padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 nav ul {
@@ -47,7 +76,7 @@ nav a:active {
 }
 
 main {
-  margin-left: 10px;
+  padding-top: 5%;
 }
 
 h2 {
@@ -72,7 +101,8 @@ h4 {
 .estudiante {
   height: 800px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-  margin-left: 625px;
+  margin-left: 655px;
+  margin-top: 3%;
 }
 
 .importante {
@@ -201,4 +231,50 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 30px;
+}
+
+.article {
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.article img {
+  margin-left: 15%;
+}
+
+.sticky-title {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  color: white;
+  padding: 1% 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.scrollear-hacia-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(117, 117, 117, 0.8);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.scrollear-hacia-arriba:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
 }

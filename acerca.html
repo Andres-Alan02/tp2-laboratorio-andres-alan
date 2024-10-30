@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <h1><a href="./index.html" class="logo">Andres Alan</a></h1>
+    <header id="top">
+      <div class="logo">
+        <h1><a href="./index.html" class="titulo-logo">Andres Alan</a></h1>
+        <a href="./index.html">
+          <img
+            src="https://web.curza.uncoma.edu.ar/images/logo_blanco.png"
+            alt="logo curza blanco transparente"
+            class="logo-img"
+          />
+        </a>
+      </div>
       <nav>
         <ul>
           <li><a href="./index.html">Inicio</a></li>
@@ -19,32 +28,42 @@
     </header>
     <main>
       <h2>Acerca de Mi.</h2>
-      <h3>
+      <h3 class="sticky-title">
         En esta seccion, estará mi biografía, por si querias saber más de mi.
         Entonces, mi biografía es:
       </h3>
-      <ol>
-        <li>
-          <p class="importante">Nombre:</p>
-          Andrés Alan
-        </li>
-        <li>
-          <p class="importante">Fecha de Nacimiento:</p>
-          03/07/2002
-        </li>
-        <li>
-          <p class="importante">DNI:</p>
-          44041559
-        </li>
-        <li>
-          <p class="importante">Lugar de Nacimiento:</p>
-          Viedma, Rio Negro, Argentina
-        </li>
-        <li>
-          <p class="importante">Estudia:</p>
-          Universidad Nacional del Comahue
-        </li>
-      </ol>
+      <div class="article">
+        <ol>
+          <li>
+            <p class="importante">Nombre:</p>
+            Andrés Alan
+          </li>
+          <li>
+            <p class="importante">Fecha de Nacimiento:</p>
+            03/07/2002
+          </li>
+          <li>
+            <p class="importante">DNI:</p>
+            44041559
+          </li>
+          <li>
+            <p class="importante">Lugar de Nacimiento:</p>
+            Viedma, Rio Negro, Argentina
+          </li>
+          <li>
+            <p class="importante">Estudia:</p>
+            Universidad Nacional del Comahue
+          </li>
+          <li>
+            <p class="importante">Estudiante:</p>
+            Tecnicatura en Desarrollo Web 2024
+          </li>
+        </ol>
+        <img
+          src="https://media-cdn.tripadvisor.com/media/photo-s/01/25/8e/8b/viedma.jpg"
+          alt="Paisaje de la ciudad de Viedma, Río Negro"
+        />
+      </div>
       <img
         class="estudiante"
         src="./img/WhatsApp Image 2024-08-26 at 4.25.07 PM.jpeg"
@@ -60,5 +79,6 @@
         >
       </p>
     </footer>
+    <a href="#" id="hacia-arriba" class="scrollear-hacia-arriba"> ↑ </a>
   </body>
 </html>
