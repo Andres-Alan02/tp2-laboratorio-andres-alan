@@ -237,14 +237,20 @@ footer {
   max-height: 300px;
   overflow-y: auto;
   background-color: lightgray;
+}
+
+.lista {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 5%;
+}
+
+#cv-completo {
+  text-align: center;
 }
 
 .article img {
-  margin-left: 15%;
+  margin-left: 36%;
 }
 
 .sticky-title {

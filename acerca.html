@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,36 +33,50 @@
         Entonces, mi biografía es:
       </h3>
       <div class="article">
-        <ol>
-          <li>
-            <p class="importante">Nombre:</p>
-            Andrés Alan
-          </li>
-          <li>
-            <p class="importante">Fecha de Nacimiento:</p>
-            03/07/2002
-          </li>
-          <li>
-            <p class="importante">DNI:</p>
-            44041559
-          </li>
-          <li>
-            <p class="importante">Lugar de Nacimiento:</p>
-            Viedma, Rio Negro, Argentina
-          </li>
-          <li>
-            <p class="importante">Estudia:</p>
-            Universidad Nacional del Comahue
-          </li>
-          <li>
-            <p class="importante">Estudiante:</p>
-            Tecnicatura en Desarrollo Web 2024
-          </li>
-        </ol>
+        <div class="lista">
+          <ol>
+            <li>
+              <p class="importante">Nombre:</p>
+              Andrés Alan
+            </li>
+            <li>
+              <p class="importante">Fecha de Nacimiento:</p>
+              03/07/2002
+            </li>
+            <li>
+              <p class="importante">DNI:</p>
+              44041559
+            </li>
+            <li>
+              <p class="importante">Lugar de Nacimiento:</p>
+              Viedma, Rio Negro, Argentina
+            </li>
+            <li>
+              <p class="importante">Estudia:</p>
+              Universidad Nacional del Comahue
+            </li>
+            <li>
+              <p class="importante">Estudiante:</p>
+              Tecnicatura en Desarrollo Web 2024
+            </li>
+          </ol>
+        </div>
         <img
           src="https://media-cdn.tripadvisor.com/media/photo-s/01/25/8e/8b/viedma.jpg"
           alt="Paisaje de la ciudad de Viedma, Río Negro"
         />
+        <p id="cv-completo" style="display: none">
+          Soy estudiante de la carrera de Tecnica en Desarrollo Web 2024, en la
+          Universidad del Comahue. La ubicacion de la universidad es en Monseñor
+          Esandi, Ricardo Balbín y, Viedma, Rio Negro. <br />Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Aenean vehicula metus quis est
+          congue, id laoreet ipsum facilisis. Fusce vitae magna odio. Proin et
+          ex in nulla sodales faucibus. Mauris et justo nec nunc pulvinar
+          elementum. Integer egestas orci nec dui dignissim tincidunt. Praesent
+          aliquet dolor at metus facilisis, ac facilisis magna bibendum. Fusce
+          accumsan pharetra libero, id posuere ligula venenatis in.
+        </p>
+        <button onclick="mostrarOcultarCV()">Leer mas</button>
       </div>
       <img
         class="estudiante"
@@ -80,5 +94,6 @@
       </p>
     </footer>
     <a href="#" id="hacia-arriba" class="scrollear-hacia-arriba"> ↑ </a>
+    <script src="./js/script.js"></script>
   </body>
 </html>
