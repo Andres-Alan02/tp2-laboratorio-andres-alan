@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #00c6ff, #0072ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+
+        #game-container {
+            background-color: #282c34;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            width: 350px;
+            text-align: center;
+        }
+
+        #game-container h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #f1f1f1;
+        }
+
+        .choice-buttons {
+            margin: 20px 0;
+        }
+
+        .choice-buttons button {
+            background-color: #444;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            border-radius: 8px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        .choice-buttons button:hover {
+            background-color: #61dafb;
+            transform: scale(1.1);
+        }
+
+        #result {
+            font-size: 20px;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        #score {
+            font-size: 18px;
+            margin-top: 15px;
+            color: #ddd;
+        }
+
+        .win {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .lose {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .draw {
+            color: #f39c12;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Piedra, Papel o Tijera</h1>
+        <p>Selecciona tu opción:</p>
+        <div class="choice-buttons">
+            <button id="rock">🪨 Piedra</button>
+            <button id="paper">📄 Papel</button>
+            <button id="scissors">✂️ Tijera</button>
+        </div>
+        <div id="result">¡Haz tu jugada!</div>
+        <div id="score">Puntuación - Tú: 0 | Computadora: 0</div>
+    </div>
+
+    <script src="./games.js"></script>
+</body>
+</html>
